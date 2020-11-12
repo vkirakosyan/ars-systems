@@ -1,0 +1,21 @@
+.contact-info-bar{
+	background: #484848;
+	z-index: 5;
+	position: fixed;
+	top: 0;
+	margin-top: 0 !important;
+}
+
+.contact-info-bar span{
+	margin-right: 5.8rem;
+}
+
+.phone-numbers span{
+	font-size: 1.15em;
+}
+
+@media(max-width: 767px){
+	.contact-info-bar span{
+		margin-right: 0.8rem;
+	}
+}

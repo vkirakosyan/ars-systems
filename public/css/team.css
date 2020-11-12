@@ -1,0 +1,78 @@
+body{
+	background: #FFFFFF; 
+	overflow-x: hidden;
+}
+
+.teampage{
+	margin-top: 7%;
+}
+
+.team-img, .team-hover{
+	width: 100%;
+	height: auto;
+	padding: unset;
+	transition: 1s all;
+}
+
+.team-col .team-hover{
+	display:none;
+}
+
+.team-col .info-card{
+	position: absolute;
+	display: none;
+	background:	rgba(0,0,0,0.5);
+	animation: 0.5s textFadeUp linear;
+	width: 100%;
+	color: #000;
+	opacity: 1;
+	transition: 1s all;
+}
+
+.team-col:hover .team-img{
+	display:none; 
+}
+
+.team-col:hover .team-hover{
+	display: block;
+	animation: 1s fadeIn;
+	transition: 1s all;
+}
+
+.team-col:hover .info-card{
+	display: block !important;
+	z-index: 1;
+}
+
+@keyframes fadeIn{
+  from{opacity: 0.33}
+  to{opacity: 1}
+}
+
+.text-team{
+	font-size: 1.3em;
+	animation: 1s textFadeUp linear;
+}
+
+.heading{
+	color: #484848;
+}
+
+@keyframes textFadeUp{
+	0%{
+		opacity: 0;
+		transform: translate3d(0,50%,0) translateY(15px);
+	}
+	100%{
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@media(min-width: 2280px)
+{
+	/* Making sure the page displays the same way it does on non 4k screens */
+	.container{
+		max-width: 1800px;
+	}
+}

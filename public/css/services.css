@@ -1,0 +1,28 @@
+.services{
+	margin-top: 7%;
+	padding-bottom: 10%;
+}
+
+.service-text{
+	color: #484848;
+	font-size: 1.31em;
+}
+
+.service-header{
+	color: #484848;
+}
+
+.custom-progress{
+	height: 50px;
+	background: #d2d7d1;
+}
+
+.custom-bar{
+	font-size: 3em;
+}
+
+@keyframes fillwidth{ 
+	0% {
+		width: 0;
+	}
+}

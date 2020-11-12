@@ -1,0 +1,33 @@
+body {
+	background-color: #f5f8fa;
+	font-family: 'Assistant';
+}
+
+.container {
+	margin-top: 10%
+}
+
+p {
+	font-size: 10em;
+	color: #6d7d82;
+}
+
+h4 {
+	line-height: 1.5em!important;
+	color: #6d7d82!important;
+}
+
+h5 {
+	margin-top: 30px!important;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #48c7ec!important;
+	font-size: 1.5em;
+}

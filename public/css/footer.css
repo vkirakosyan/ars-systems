@@ -1,0 +1,54 @@
+.main-footer{
+	background: #484848;
+}
+
+.footer-diamond:first-of-type{
+	margin-left: 18%;
+}
+
+.footer-diamond {
+	margin-top: 50px;
+	margin-left: 30px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: #fff;
+	position: relative;
+	top: -30px;
+	transform: rotate(45deg);
+	border: 2px solid #137440;
+}
+
+.footer-icon{
+	margin-top: 1px;
+	width: 25px;
+	height: 25px;
+	transform: rotate(-45deg);
+	filter: grayscale(100%);
+	transition: filter 0.3s linear;
+}
+
+.footer-icon:hover{
+	filter: none;
+	cursor: pointer;
+	animation: 1s iconscaleup;
+}
+
+@keyframes iconscaleup{
+	from { transform: scale(1); }
+	to   { transform: rotate(290deg) scale(3); }
+}
+
+@media(max-width: 390px)
+{
+	.footer-diamond{
+		margin-left: 20px;
+	}
+}
+
+@media(max-width: 340px)
+{
+	.footer-diamond{
+		margin-left: 15px;
+	}
+}

@@ -1,0 +1,194 @@
+.site-navbar{
+	background: rgba(255,255,255,1);
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	z-index: 4;
+	top: 25px;
+	border-bottom: 1px solid #000;
+}
+
+.logo{
+	width: 100px;
+	height: 100px;
+}
+
+.logo:hover{
+	cursor: pointer;
+}
+
+.nav-container{
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+
+.nav-link.nav-link-custom{
+	color: #000 !important;
+	margin-right: 2em;
+}
+
+.nav-link.nav-link-custom:last-of-type{
+	margin-right: 2.7em;
+}
+
+.nav-link-custom:focus{
+	outline: none;
+}
+
+.navbar-brand{
+	margin-left: 10%;
+}
+
+@media screen and (min-width: 981px) {
+	.nav-link-custom::before,
+	.nav-link-custom::after {
+		display: inline-block;
+		opacity: 0;
+		-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+		-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+		transition: transform 0.3s, opacity 0.2s;
+	}
+	.nav-link-custom::before {
+		margin-right: 10px; /*you may want to adjust this*/
+		content: '|'; /*you can change the pipe to something else if you wish*/
+		-webkit-transform: translateX(20px);
+		-moz-transform: translateX(20px);
+		transform: translateX(20px);
+	}
+	.nav-link-custom::after {
+		margin-left: 10px; /*you may want to adjust this*/
+		content: '|'; /*you can change the pipe to something else if you wish*/
+		-webkit-transform: translateX(-20px);
+		-moz-transform: translateX(-20px);
+		transform: translateX(-20px);
+	}
+	.nav-link-custom:hover::before,
+	.nav-link-custom:hover::after,
+	.nav-link-custom:focus::before,
+	.nav-link-custom:focus::after {
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+}
+
+@media(max-width: 1427px)
+{
+	.contact{
+		margin-top: 10% !important;
+	}
+}
+
+@media(max-width: 1150px)
+{
+	.contact{
+		margin-top: 12% !important;
+	}
+}
+
+@media(max-width: 1104px)
+{
+	.navbar-brand{
+		margin-left: 4%;
+	}
+}
+
+@media(min-width: 997px) and (max-width: 1056px)
+{
+	.nav-link.nav-link-custom{
+		margin-right: 1.2em;
+	}
+}
+
+@media(max-width: 996px)
+{
+	.nav-container{
+		font-size: 1.3em;
+	}
+
+	.mainpage,.teampage,.services,.career,.contact{
+		margin-top: 15% !important;
+	}
+
+	.outsourcing{
+		margin-top: 15% !important;
+	}
+}
+
+@media(max-width: 821px)
+{
+	.nav-container{
+		font-size: 1.1em;
+	}
+}
+
+@media(max-width: 767px)
+{
+	.nav-link.nav-link-custom, .nav-link.nav-link-custom:last-of-type{
+		margin-right: 0;
+	}
+
+	.navbar-nav{
+		align-items: center;
+	}
+}
+
+@media (max-width: 728px){
+	.mainpage,.teampage,.services,.career,.contact{
+		margin-top: 21% !important;
+	}
+
+	.outsourcing{
+		margin-top: 20% !important;
+	}
+}
+
+@media(max-width: 635px)
+{
+	.mainpage,.teampage,.services,.career,.contact{
+		margin-top: 24% !important;
+	}
+
+	.outsourcing{
+		margin-top: 24% !important;
+	}
+}
+
+
+@media(max-width: 488px)
+{
+
+	.site-navbar{
+		top: 50px;
+	}
+
+	.mainpage,.teampage,.services,.career,.contact{
+		margin-top: 37% !important;
+	}
+
+	.outsourcing{
+		margin-top: 28% !important;
+	}
+}
+
+@media(max-width: 428px)
+{
+	.mainpage,.teampage,.services,.career,.contact{
+		margin-top: 41% !important;
+	}
+
+	.outsourcing{
+		margin-top: 32% !important;
+	}
+}
+
+@media(max-width: 327px){
+	.mainpage,.teampage,.services,.career,.contact{
+		margin-top: 55% !important;
+	}
+
+	.outsourcing{
+		margin-top: 36% !important;
+	}
+}
